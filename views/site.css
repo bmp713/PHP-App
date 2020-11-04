@@ -1,0 +1,225 @@
+@keyframes fadein{
+	from	{ opacity: 0; }
+	to	{ opacity: 1; }
+}
+*{
+    	list-style: none;
+	text-decoration: none !important;
+	scroll-behavior: smooth;
+}
+a{	cursor: pointer;
+        transition: all 0.5s;
+}
+body{
+	min-height: 100vh;
+	color: #000d;
+        font-size: 15px;
+        font-weight: 500;
+	font-family: 'Montserrat';
+        background: linear-gradient( #0000,#0000 ), url("http://brandonmpiper.com/assets/images/8 (87).jpg") no-repeat fixed;
+        background: linear-gradient( #0000,#0000 ), url("http://brandonmpiper.com/assets/images/10 (104).jpg") no-repeat fixed;
+
+	background-size: cover;
+	animation: fadein 5s;
+}
+
+
+
+
+nav{
+	background: linear-gradient( #000d,#000d ) !important;
+	border: 0px solid #ffff !important;
+	color: #ffff !important;
+}
+nav a{
+	font-size: 14px;
+	color: #ffff !important;
+}
+nav a:hover{
+}
+.nav-btn{
+        color: #ffff !important;
+        font-size: 40px;
+}
+.navbar-toggler{
+	padding: 0px;
+}
+.navbar-toggler:focus{
+	outline: 0px solid #0000;
+}
+.dropdown-menu{
+        background: linear-gradient( #000d,#000d ) !important;
+}
+
+
+
+.col-lg-6{
+	padding: 100px 100px;
+}
+
+
+
+
+#page{
+	min-height: 100vh;
+}
+
+
+
+
+#profile{
+	min-height: 70vh;
+        color: #ffff;
+        background-size: cover;
+}
+#profile .col-lg-6:nth-of-type(1){
+	color: #ffff;
+	background: linear-gradient( #0009,#0009 );
+}
+#profile .col-lg-6:nth-of-type(2){
+	color: #ffff;
+	background: linear-gradient( #000d,#000d );
+}
+
+
+
+#create{
+	border:	2px solid #ffff; 
+	padding:10px 50px; 
+	color:#ffff;
+	font-weight: 900;
+	transition: 0.5s;
+}
+#create:hover{
+        border: 2px solid #ffff;
+        padding:10px 50px;
+        color:#222f;
+	background: #ffff;
+}
+
+
+
+
+#post{
+        background: #0005;
+}
+#settings{
+	background: #000d;
+}
+
+
+
+
+#contact{
+	min-height: 80vh;
+        color: #ffff;
+        background: linear-gradient( #0000,#0000 ), url("http://brandonmpiper.com/assets/images/8 (61).jpg") no-repeat fixed;
+        background: linear-gradient( #0000,#0000 ), url("http://brandonmpiper.com/assets/images/8 (87).jpg") no-repeat;
+        //background: linear-gradient( #0000,#0000 );
+        background-size: cover;
+}
+#contact .col-lg-6:nth-of-type(1){
+//	background: #0009;
+        background-size: cover;
+}
+#contact .col-lg-6:nth-of-type(2){
+        background-size: cover;
+}
+
+
+
+
+form{
+	padding: 100px 0px;
+	width: 100%;
+	color: #ffff;
+}
+input, textarea{
+	color: #ffff;
+	width: 60%;
+        padding: 10px 20px;
+	background: #0000 !important;
+}
+.submit, #submit, #upload{
+	width: 50%;
+	padding: 10px 15px;
+	color: #ffff;
+        border: 2px solid #fff7;
+        background: #0000 !important;
+        transition: all .5s;
+}
+.submit:hover, #submit:hover{
+	transition: all .5s;
+        background: #ffff !important;
+	border: 2px solid #ffff;
+	color: #222f;
+}
+#message{
+	display: none;
+        position: absolute;
+	padding: 25px;
+	right: 0px;
+	width: 100%;
+	background: #0007;
+	box-shadow: 20px 20px 50px #0007;
+	animation: fadein 1s;
+}
+
+
+
+
+#footer{
+	padding: 25px 50px;
+	color: #ffff;
+	font-size: 12px;
+	background: #000d;
+	background: linear-gradient( #000e,#000e );
+	background-size: cover;
+}
+#footer .col-lg-2, #footer .col-lg-3, #footer .col-lg-4{
+        padding: 25px 25px;
+}
+#up a, #up img{
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        z-index: 100;
+	font-weight: 100 !important;
+	font-size: 70px;
+	color: #cccf;
+}
+
+
+
+
+@media( max-width:900px ){
+        .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-12{
+                padding: 150px 50px;
+        }
+	.col-lg-6{
+        	padding: 100px 50px;
+	}
+	.col-lg-6 img{
+		width: 100% !important;
+	}
+        #header .col-lg-5{
+                color: #ffff;
+                padding: 400px 50px 0px 50px;
+        }
+	body{
+	        background: linear-gradient( #0000,#0000 ), url("http://brandonmpiper.com/assets/images/5 (58).jpg") no-repeat;
+		background-position: 15%;
+		background-size: cover;
+	}
+	body,
+        #header, #header .col-lg-4,
+	#profile .col-lg-6, #profile,
+        #contact, #contact .col-lg-6:nth-of-type(2),
+	#contact .col-lg-6:nth-of-type(1){
+                background-attachment: scroll !important;
+        }
+	input, textarea{
+        	width: 100%;
+        	padding: 10px 0px;
+	}
+}
